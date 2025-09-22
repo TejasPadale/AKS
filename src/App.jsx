@@ -18,8 +18,8 @@ function App() {
       <About />
       <Services />
       <Projects />
-      <OurTeam />
       <Clients />
+      <OurTeam />
       <ContactUs />
     </div>
   );
