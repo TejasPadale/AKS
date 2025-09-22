@@ -45,6 +45,13 @@
         contact: "",
         pic: "",
         },
+        {
+        name: "MR. TEJAS PADALE",
+        designation: "MEDIA OPERATOR",
+        experience: "",
+        contact: "",
+        pic: "",
+        },
     ];
 
     return (
