@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* Premium Corporate Scrollbar with Arrows */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3b82f6, #1e3a8a);
+  border-radius: 12px;
+  border: 3px solid #f9fafb;
+  transition: background 0.3s ease, opacity 0.3s ease;
+  opacity: 0.85;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #2563eb, #172554);
+  opacity: 1;
+}
+
+/* Buttons (arrows) */
+::-webkit-scrollbar-button {
+  height: 16px;
+  background: #f9fafb;
+  display: block;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><polygon points='6,2 10,8 2,8' fill='%233b82f6'/></svg>") no-repeat center;
+  background-size: 8px;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><polygon points='2,4 10,4 6,10' fill='%233b82f6'/></svg>") no-repeat center;
+  background-size: 8px;
+}
+
+/* For react-slick carousel - Vite style */
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+/* Optional: customize lightbox overlay */
+.react-image-lightbox {
+  z-index: 50;
+}
