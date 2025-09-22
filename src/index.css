@@ -49,3 +49,10 @@
 .react-image-lightbox {
   z-index: 50;
 }
+
+.active-link {
+  @apply text-blue-600 font-bold;
+}
+.active-link::after {
+  transform: scaleX(1) !important;
+}

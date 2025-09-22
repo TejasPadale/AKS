@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Menu, X } from "lucide-react";
 
-import Logo from "../assets/react.svg"
+import Logo from "../assets/react.svg";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,8 +59,10 @@ export default function Navbar() {
               duration={800}
               spy={true}
               offset={-70}
-              activeClass="text-blue-600 font-bold border-b-2 border-blue-600"
-              className="cursor-pointer hover:text-blue-600 transition-colors"
+              activeClass="active-link"
+              className="relative cursor-pointer hover:text-blue-600 transition-colors inline-block
+                         after:content-[''] after:block after:h-[2px] after:bg-blue-600 after:scale-x-0
+                         after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100"
             >
               {link.label}
             </Link>
@@ -75,7 +77,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md">
+        <div className="md:hidden bg-gray-700 shadow-md">
           <ul className="flex flex-col items-center gap-4 py-4">
             {navLinks.map((link) => (
               <li key={link.to}>
@@ -85,9 +87,11 @@ export default function Navbar() {
                   duration={800}
                   spy={true}
                   offset={-70}
-                  activeClass="text-blue-600 font-bold border-b-2 border-blue-600"
+                  activeClass="active-link"
                   onClick={() => setIsOpen(false)}
-                  className="cursor-pointer hover:text-blue-600 transition-colors"
+                  className="relative cursor-pointer hover:text-blue-600 transition-colors inline-block
+                       after:content-[''] after:block after:h-[2px] after:bg-blue-600 after:scale-x-0
+                       after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100"
                 >
                   {link.label}
                 </Link>
