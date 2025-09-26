@@ -1,7 +1,3 @@
-import bgw01 from "../assets/Projects/Base Grouting Work/01.PNG";
-import bgw02 from "../assets/Projects/Base Grouting Work/02.PNG";
-import bgw03 from "../assets/Projects/Base Grouting Work/03.PNG";
-import bgw04 from "../assets/Projects/Base Grouting Work/04.PNG";
 
 import ProjectCard from "../components/ProjectCard";
 import {
@@ -19,6 +15,7 @@ import {
   FaCheckCircle,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { baseGroutingWork, chamberConstructionWork, fallCielingWork, foundationExtensionWork, humePipeImages, officeBuildingBachelorsBoard, PCCWork, poleFixingWork, radiographyPitRoomWork, RCCRetainingWallWork, roadConstructionWork, roadConstructionWorkISHIDA, sewageStormWaterDrainageWork, thermoplasticParkingMarkingWork, weighbridgeFoundationWork } from "../assets/projectImages";
 
 const projectsData = [
   {
@@ -26,93 +23,93 @@ const projectsData = [
     location: "OYC India, Kesurdi (Sahyadri Suppliers)",
     description:
       "Worked as Sub Contractor under the Sahyadri Enterprises, Underground Hume Pipe Laying for the Electrical Cables.",
-    images: ["/images/project1-1.jpg", "/images/project1-2.jpg"],
+    images: humePipeImages,
   },
   {
     name: "Base Grouting Work",
     location: "OYC India, Kesurdi (Toyo Engineering)",
     description:
       "Base grouting of pumps, vessels, motors in Conbextra GP2 material with proficiency and quality.",
-    images: [bgw01, bgw02, bgw03, bgw04],
+    images: baseGroutingWork,
   },
   {
     name: "Radiography Pit Room Work",
     location: "OYC India, Kesurdi (Ador Welding)",
     description: "Construction of Pit Room for Storage of radiography camera.",
-    images: ["/images/project3-1.jpg", "/images/project3-2.jpg"],
+    images: radiographyPitRoomWork,
   },
   {
     name: "Thermoplastic Parking Marking Work",
     location: "Vision One, Wakad (Siddhivinayak Group)",
     description: "Thermoplastic paint marking for parking areas.",
-    images: ["/images/project4-1.jpg", "/images/project4-2.jpg"],
+    images: thermoplasticParkingMarkingWork,
   },
   {
     name: "Road Construction Work",
     location: "Godrej Interio, Shindewadi",
     description: "Construction of road with included material and manpower.",
-    images: ["/images/project5-1.jpg", "/images/project5-2.jpg"],
+    images: roadConstructionWork,
   },
   {
     name: "Weighbridge Foundation Work",
     location: "Ajay Industries Pvt. Ltd, Wing",
     description: "Weighbridge Foundation for 40 tonne Weighbridge in a factory.",
-    images: ["/images/project6-1.jpg", "/images/project6-2.jpg"],
+    images: weighbridgeFoundationWork,
   },
   {
     name: "Pole Fixing Work",
     location: "Datwyler, Kesurdi (Canter Engineers)",
     description: "Fixing poles for fire fighting Cable Laying in New plant.",
-    images: ["/images/project7-1.jpg", "/images/project7-2.jpg"],
+    images: poleFixingWork,
   },
   {
     name: "Foundation Extension Work",
     location: "Datwyler, Kesurdi (Canter Engineers)",
     description:
       "Foundation Extension for fire fighting Pump room in old plant.",
-    images: ["/images/project8-1.jpg", "/images/project8-2.jpg"],
+    images: foundationExtensionWork,
   },
   {
     name: "Chamber Construction Work",
     location: "Datwyler, Kesurdi (Canter Engineers)",
     description: "Construction of Chambers for fire fighting valves.",
-    images: ["/images/project9-1.jpg", "/images/project9-2.jpg"],
+    images: chamberConstructionWork,
   },
   {
     name: "Road Construction Work",
     location: "ISHIDA, Kesurdi (Sahyadri Suppliers)",
     description: "Construction of Road in ISHIDA with Tremix Treatment.",
-    images: ["/images/project10-1.jpg", "/images/project10-2.jpg"],
+    images: roadConstructionWorkISHIDA,
   },
   {
     name: "PCC Work",
     location: "Ajay Industries, Wing",
     description: "PCC For Fire Pump Room.",
-    images: ["/images/project11-1.jpg", "/images/project11-2.jpg"],
+    images: PCCWork,
   },
   {
     name: "Office Building, Bachelors Board",
     location: "Wilo Mather Platts & Pumps, Kesurdi",
     description: "G+1 Bachelor Boarding Building Construction.",
-    images: ["/images/project12-1.jpg", "/images/project12-2.jpg"],
+    images: officeBuildingBachelorsBoard,
   },
   {
     name: "Sewage & Storm Water Drainage Work",
     location: "Wilo Mather Platts & Pumps, Kesurdi",
     description: "Laying Hume pipes for Drainage with line & Level.",
-    images: ["/images/project13-1.jpg", "/images/project13-2.jpg"],
+    images: sewageStormWaterDrainageWork,
   },
   {
     name: "RCC Retaining Wall Work",
     location: "KSB Pumps, Kesurdi",
     description: "Construction Of RCC Retaining Wall.",
-    images: ["/images/project14-1.jpg", "/images/project14-2.jpg"],
+    images: RCCRetainingWallWork,
   },
   {
     name: "False Ceiling Work",
     location: "Kesurdi, Wing",
     description: "PVC Panels Installation in Conference Room.",
-    images: ["/images/project15-1.jpg", "/images/project15-2.jpg"],
+    images: fallCielingWork,
   },
 ];
 
