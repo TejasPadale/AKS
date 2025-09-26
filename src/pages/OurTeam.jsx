@@ -8,16 +8,8 @@
         designation: "PROPRIETOR / ADMINISTRATION",
         experience: "",
         contact: "+919172371817",
-        pic: "", // leave blank for now (shows user icon)
-        },
-        {
-        name: "MR. AVINASH TALEKAR",
-        designation: "EXPERT (MEP/MAINTENANCE & PROJECTS)",
-        experience: "ESSAR GROUP",
-        contact: "+919833946192",
-        pic: "", // can replace with image path later
-        },
-        {
+        pic: "",
+        },{
         name: "MR. KIRAN SAWANT",
         designation: "EXPERT (CIVIL & MAINTENANCE)",
         experience: "IRRIGATION DEPT. GOV. OF INDIA",
@@ -30,22 +22,19 @@
         experience: "",
         contact: "",
         pic: "",
-        },
-        {
-        name: "MR. SURAJ PATIL",
-        designation: "SITE ENGINEER",
+        },{
+        name: "MR. ASHISH TALEKAR",
+        designation: "SITE SUPERWISER",
         experience: "",
-        contact: "",
+        contact: "+919833946192",
         pic: "",
-        },
-        {
-        name: "MR. KIRAN KADAM",
-        designation: "SITE SUPERVISOR",
+        },{
+        name: "MR. AKSHAY SALUNKHE",
+        designation: "ACCOUNT DEPARTMENT",
         experience: "",
-        contact: "",
+        contact: "+919833946192",
         pic: "",
-        },
-        {
+        },{
         name: "MR. TEJAS PADALE",
         designation: "MEDIA OPERATOR",
         experience: "",
