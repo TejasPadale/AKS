@@ -21,7 +21,7 @@ export default function ProjectCard({ project }) {
     arrows: false,
     swipe: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1500,
     lazyLoad: "ondemand",
   };
 

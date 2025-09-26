@@ -1,3 +1,32 @@
+import cwgl1 from "../assets/Projects/CSR Work Godrej Lwakim/01.jpg";
+import cwgl2 from "../assets/Projects/CSR Work Godrej Lwakim/02.jpg";
+import cwgl3 from "../assets/Projects/CSR Work Godrej Lwakim/03.jpg";
+import cwgl4 from "../assets/Projects/CSR Work Godrej Lwakim/04.jpg";
+export const CSRWorkGodrejLwakim = [cwgl1, cwgl2, cwgl3, cwgl4];
+
+import cug1 from "../assets/Projects/Construction of UCR Gutter/01.jpg";
+export const constructionofUCRGutter = [cug1];
+
+import cb1 from "../assets/Projects/Construction of Bridge/01.jpg";
+import cb2 from "../assets/Projects/Construction of Bridge/02.jpg";
+import cb3 from "../assets/Projects/Construction of Bridge/03.jpg";
+import cb4 from "../assets/Projects/Construction of Bridge/04.jpg";
+export const constructionofBridge = [cb1, cb2, cb3, cb4];
+
+import cpcw1 from "../assets/Projects/Construction of Precast Compound Wall/01.jpg";
+import cpcw2 from "../assets/Projects/Construction of Precast Compound Wall/02.jpg";
+export const constructionOfPrecastCompoundWall = [cpcw1, cpcw2];
+
+import cSdbTank1 from "../assets/Projects/Construction of SDB Tank/01.jpg";
+import cSdbTank3 from "../assets/Projects/Construction of SDB Tank/02.jpg";
+import cSdbTank2 from "../assets/Projects/Construction of SDB Tank/03.jpg";
+export const constructionOfSDBTank = [cSdbTank1, cSdbTank2, cSdbTank3];
+
+import cllr1 from "../assets/Projects/Construction of Labour Lawkr Room/01.jpg";
+import cllr2 from "../assets/Projects/Construction of Labour Lawkr Room/02.jpg";
+import cllr3 from "../assets/Projects/Construction of Labour Lawkr Room/03.jpg";
+export const constructionOfLabourLawkrRoom = [cllr1, cllr2, cllr3];
+
 import bgw1 from "../assets/Projects/Base Grouting Work/01.PNG";
 import bgw2 from "../assets/Projects/Base Grouting Work/02.PNG";
 import bgw3 from "../assets/Projects/Base Grouting Work/03.PNG";
