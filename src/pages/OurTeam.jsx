@@ -38,7 +38,7 @@
         name: "MR. TEJAS PADALE",
         designation: "MEDIA OPERATOR",
         experience: "",
-        contact: "",
+        contact: "+918605770420",
         pic: "",
         },
     ];
