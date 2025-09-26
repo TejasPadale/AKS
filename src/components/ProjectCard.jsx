@@ -22,7 +22,7 @@ export default function ProjectCard({ project }) {
     swipe: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    lazyLoad: "ondemand", // 👈 only load images when needed
+    lazyLoad: "ondemand",
   };
 
   return (
@@ -41,19 +41,35 @@ export default function ProjectCard({ project }) {
       )}
 
       {/* Thumbnail carousel */}
-      <Slider {...settings} ref={thumbnailSliderRef}>
-        {project.images.map((img, index) => (
-          <div key={index}>
-            <img
-              src={img}
-              alt={`${project.name} - slide ${index + 1}`}
-              className="w-full h-48 sm:h-64 object-cover cursor-pointer rounded-md transition duration-300 ease-in-out hover:opacity-90"
-              loading="lazy" // 👈 lazy load
-              onClick={() => setIsFullscreen(true)}
-            />
-          </div>
-        ))}
-      </Slider>
+      <div className="relative">
+        <Slider
+          {...settings}
+          ref={thumbnailSliderRef}
+          className="
+            [&_.slick-dots]:!absolute
+            [&_.slick-dots]:!bottom-2
+            [&_.slick-dots]:!left-1/2
+            [&_.slick-dots]:!-translate-x-1/2
+            [&_.slick-dots_li_button:before]:!text-xs
+            [&_.slick-dots_li_button:before]:!text-white
+            [&_.slick-dots_li_button:before]:!opacity-70
+            [&_.slick-dots_li.slick-active_button:before]:!text-red-400
+            [&_.slick-dots_li.slick-active_button:before]:!opacity-100
+          "
+        >
+          {project.images.map((img, index) => (
+            <div key={index}>
+              <img
+                src={img}
+                alt={`${project.name} - slide ${index + 1}`}
+                className="w-full h-48 sm:h-64 object-cover cursor-pointer rounded-md transition duration-300 ease-in-out hover:opacity-90"
+                loading="lazy"
+                onClick={() => setIsFullscreen(true)}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
 
       {/* Fullscreen Modal */}
       <AnimatePresence>
@@ -94,7 +110,21 @@ export default function ProjectCard({ project }) {
 
             {/* Fullscreen Carousel */}
             <div className="relative w-full max-w-3xl sm:max-w-4xl">
-              <Slider {...settings} ref={fullscreenSliderRef}>
+              <Slider
+                {...settings}
+                ref={fullscreenSliderRef}
+                className="
+                  [&_.slick-dots]:!absolute
+                  [&_.slick-dots]:!bottom-4
+                  [&_.slick-dots]:!left-1/2
+                  [&_.slick-dots]:!-translate-x-1/2
+                  [&_.slick-dots_li_button:before]:!text-sm
+                  [&_.slick-dots_li_button:before]:!text-white
+                  [&_.slick-dots_li_button:before]:!opacity-70
+                  [&_.slick-dots_li.slick-active_button:before]:!text-red-400
+                  [&_.slick-dots_li.slick-active_button:before]:!opacity-100
+                "
+              >
                 {project.images.map((img, index) => (
                   <div key={index} className="flex items-center justify-center">
                     <img
