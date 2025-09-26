@@ -20,7 +20,7 @@
         name: "MR. GANESH POL",
         designation: "SR. SITE ENGINEER",
         experience: "",
-        contact: "",
+        contact: "+919975897828",
         pic: "",
         },{
         name: "MR. ASHISH TALEKAR",

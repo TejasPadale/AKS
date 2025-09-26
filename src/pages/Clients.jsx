@@ -3,13 +3,13 @@ import adorlogo from "../assets/ador-welding-logo.svg";
 import ajaylogo from "../assets/ajay-plumbing-logo.png";
 import canterlogo from "../assets/canter-logo.png";
 import toyologo from "../assets/Toyo_Engineering_Corporation.jpg";
-import godrejlogo from "../assets/godrej-interio.png";
+import godrejlogo from "../assets/godrej.png";
 
 export default function Clients() {
   const clients = [
     { id: 1, image: adorlogo, alt: "Ador Welding" },
     { id: 2, image: ajaylogo, alt: "Ajay Plumbing" },
-    { id: 3, image: godrejlogo, alt: "Godrej Interio" },
+    { id: 3, image: godrejlogo, alt: "Godrej" },
     { id: 4, image: canterlogo, alt: "Canter" },
     { id: 5, image: toyologo, alt: "Toyo Engineering" },
   ];
