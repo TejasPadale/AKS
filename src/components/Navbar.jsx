@@ -46,7 +46,7 @@ export default function Navbar() {
 
         {/* Middle: Company Name */}
         <div className="absolute left-1/2 transform -translate-x-1/2">
-          <span className="text-xl font-bold whitespace-nowrap text-orange-500">
+          <span className="text-2xl font-bold whitespace-nowrap text-orange-500">
             AKS Construction
           </span>
         </div>
