@@ -21,11 +21,7 @@ export default function Navbar() {
   // Listen for scroll
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -34,22 +30,28 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-transparent"
+        scrolled ? "bg-white/50 backdrop-blur-md shadow-md" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
-        {/* Left: Logo + Company */}
+        {/* Left: Logo */}
         <div
-          className="flex items-center gap-2 cursor-pointer"
+          className="cursor-pointer"
           onClick={() =>
             scroll.scrollToTop({ duration: 800, smooth: "easeInOutQuad" })
           }
         >
-          <img src={Logo} alt="Logo" className="h-8 w-8" />
-          <span className="text-xl font-bold">AKS Construction</span>
+          <img src={Logo} alt="Logo" className="h-10 w-10" />
         </div>
 
-        {/* Desktop Links */}
+        {/* Middle: Company Name */}
+        <div className="absolute left-1/2 transform -translate-x-1/2">
+          <span className="text-xl font-bold whitespace-nowrap text-orange-500">
+            AKS Construction
+          </span>
+        </div>
+
+        {/* Right: Desktop Links */}
         <div className="hidden md:flex gap-6">
           {navLinks.map((link) => (
             <Link
@@ -69,7 +71,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Mobile Hamburger */}
+        {/* Right: Mobile Hamburger */}
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
