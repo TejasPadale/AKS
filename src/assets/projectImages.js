@@ -27,6 +27,24 @@ import cllr2 from "../assets/Projects/Construction of Labour Lawkr Room/02.jpg";
 import cllr3 from "../assets/Projects/Construction of Labour Lawkr Room/03.jpg";
 export const constructionOfLabourLawkrRoom = [cllr1, cllr2, cllr3];
 
+import cpuw1 from "../assets/Projects/Construction Of Pound UCR Wall/01.jpg";
+import cpuw2 from "../assets/Projects/Construction Of Pound UCR Wall/02.jpg";
+import cpuw3 from "../assets/Projects/Construction Of Pound UCR Wall/03.jpg";
+import cpuw4 from "../assets/Projects/Construction Of Pound UCR Wall/04.jpg";
+export const constructionOfPoundUCRwall = [cpuw1, cpuw2, cpuw3, cpuw4];
+
+import cnlo1 from "../assets/Projects/Construction of NGCPR Lab Office/01.jpg";
+import cnlo2 from "../assets/Projects/Construction of NGCPR Lab Office/02.jpg";
+import cnlo3 from "../assets/Projects/Construction of NGCPR Lab Office/03.jpg";
+import cnlo4 from "../assets/Projects/Construction of NGCPR Lab Office/04.jpg";
+export const constructionOfNGCPRLabOffice = [cnlo1, cnlo2, cnlo3, cnlo4];
+
+import wat1 from "../assets/Projects/Waterproofing At Terrace/01.jpg";
+import wat2 from "../assets/Projects/Waterproofing At Terrace/02.jpg";
+import wat3 from "../assets/Projects/Waterproofing At Terrace/03.jpg";
+import wat4 from "../assets/Projects/Waterproofing At Terrace/04.mp4";
+export const waterproofingAtTerrace = [wat1, wat2, wat3, wat4];
+
 import bgw1 from "../assets/Projects/Base Grouting Work/01.PNG";
 import bgw2 from "../assets/Projects/Base Grouting Work/02.PNG";
 import bgw3 from "../assets/Projects/Base Grouting Work/03.PNG";
@@ -55,6 +73,9 @@ import rcw2 from "../assets/Projects/Road Construction Work/02.PNG"
 import rcw3 from "../assets/Projects/Road Construction Work/03.PNG"
 import rcw4 from "../assets/Projects/Road Construction Work/04.PNG"
 export const roadConstructionWork = [rcw1, rcw2, rcw3, rcw4];
+
+import cp1 from "../assets/Projects/Construction of Patway/01.jpg"
+export const constructionOfPatway = [cp1];
 
 import wfw1 from "../assets/Projects/Weighbridge Foundation Work/01.PNG"
 import wfw2 from "../assets/Projects/Weighbridge Foundation Work/02.PNG"

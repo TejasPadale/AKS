@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Menu, X } from "lucide-react";
 
-import Logo from "../assets/react.svg";
+import Logo from "../assets/logo.PNG";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

@@ -21,6 +21,9 @@ import {
   chamberConstructionWork,
   constructionofBridge,
   constructionOfLabourLawkrRoom,
+  constructionOfNGCPRLabOffice,
+  constructionOfPatway,
+  constructionOfPoundUCRwall,
   constructionOfPrecastCompoundWall,
   constructionOfSDBTank,
   CSRWorkGodrejLwakim,
@@ -36,6 +39,7 @@ import {
   roadConstructionWorkISHIDA,
   sewageStormWaterDrainageWork,
   thermoplasticParkingMarkingWork,
+  waterproofingAtTerrace,
   weighbridgeFoundationWork,
 } from "../assets/projectImages";
 
@@ -73,6 +77,34 @@ const projectsData = [
     description:
       "Construction of Labour Lawkr Room at Godrej Lwakim Plant ( Godrej Lwakim)",
     images: constructionOfLabourLawkrRoom,
+  },
+  {
+    name: "Construction of Pound UCR wall",
+    location: "Godrej Lwakim Plant",
+    description:
+      "Construction of Pound UCR wall at Godrej Lwakim Plant ( Godrej Lwakim)",
+    images: constructionOfPoundUCRwall,
+  },
+  {
+    name: "Construction of NGCPR Lab Office",
+    location: "Godrej Lwakim Plant",
+    description:
+      "Construction of NGCPR Lab Office at Godrej Lwakim Plant ( Godrej Lwakim)",
+    images: constructionOfNGCPRLabOffice,
+  },
+  {
+    name: "Construction of Patway",
+    location: "Godrej Lwakim Plant",
+    description:
+      "Construction of Patway NGCPR Lab Godrej ( Godrej Lwakim)",
+    images: constructionOfPatway,
+  },
+  {
+    name: "Waterproofing At Terrace",
+    location: "Godrej Lwakim Plant",
+    description:
+      "Waterproofing At Terrace at Godrej Lwakim Plant ( Godrej Lwakim)",
+    images: waterproofingAtTerrace,
   },
   {
     name: "Hume Pipe Laying",

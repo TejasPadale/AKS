@@ -10,9 +10,7 @@ export default function ContactUs() {
     >
       {/* Darker solid/gradient industrial background */}
       <div className="absolute inset-0 -z-10">
-        <div
-          className="w-full h-full bg-gray-800"
-        ></div>
+        <div className="w-full h-full bg-gray-800"></div>
       </div>
 
       {/* Section title */}
@@ -57,7 +55,7 @@ export default function ContactUs() {
             whileHover={{ scale: 1.05 }}
             className="flex flex-col items-center space-y-3 bg-gray-950/80 rounded-xl p-6 shadow-xl transition-transform duration-300"
           >
-            <FaPhone className="contact-icon text-orange-500 text-4xl" />
+            <FaPhone className="contact-icon text-orange-500 text-4xl transform -scale-x-100" />
             <a
               href="tel:+919172371817"
               className="text-orange-400 font-semibold hover:text-white transition-colors text-base md:text-lg"
