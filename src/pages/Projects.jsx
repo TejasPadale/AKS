@@ -26,6 +26,7 @@ import {
   constructionOfPoundUCRwall,
   constructionOfPrecastCompoundWall,
   constructionOfSDBTank,
+  constructionofUCRGutter,
   CSRWorkGodrejLwakim,
   fallCielingWork,
   foundationExtensionWork,
@@ -59,10 +60,17 @@ const projectsData = [
   },
   {
     name: "Construction of Precast Compound Wall",
-    location: "Mirje",
+    location: "Kirti Devlopers, Mirje",
     description:
       "Construction of Precast Compound Wall at Mirje ( Kirti Devlopers).",
     images: constructionOfPrecastCompoundWall,
+  },
+  {
+    name: "Construction of UCR Gutter",
+    location: "Kirti Devlopers, Mirje",
+    description:
+      "Construction of UCR Gutter at Mirje ( Kirti Devlopers).",
+    images: constructionofUCRGutter,
   },
   {
     name: "Construction of SDB Tank",
