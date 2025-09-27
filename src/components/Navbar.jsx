@@ -8,6 +8,8 @@ import Logo from "../assets/logo.PNG";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const navLinks = [
     { to: "home", label: "Home" },
@@ -18,20 +20,35 @@ export default function Navbar() {
     { to: "contactus", label: "Contact Us" },
   ];
 
-  // Listen for scroll
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      const currentScrollY = window.scrollY;
+      const threshold = 10; // minimum scroll to detect
+
+      // background blur after 50px
+      setScrolled(currentScrollY > 50);
+
+      // hide on scroll down, show on scroll up
+      if (Math.abs(currentScrollY - lastScrollY) > threshold) {
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+          setVisible(false); // scrolling down
+        } else {
+          setVisible(true); // scrolling up
+        }
+        setLastScrollY(currentScrollY);
+      }
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/50 backdrop-blur-md shadow-md" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500
+        ${scrolled ? "bg-white/50 backdrop-blur-md shadow-md" : "bg-transparent"}
+        ${visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}
+      `}
     >
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         {/* Left: Logo */}
@@ -77,31 +94,33 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Dropdown */}
-      {isOpen && (
-        <div className="md:hidden bg-gray-700 shadow-md">
-          <ul className="flex flex-col items-center gap-4 py-4">
-            {navLinks.map((link) => (
-              <li key={link.to}>
-                <Link
-                  to={link.to}
-                  smooth="easeInOutQuad"
-                  duration={800}
-                  spy={true}
-                  offset={-70}
-                  activeClass="active-link"
-                  onClick={() => setIsOpen(false)}
-                  className="relative cursor-pointer hover:text-blue-600 transition-colors inline-block
-                       after:content-[''] after:block after:h-[2px] after:bg-blue-600 after:scale-x-0
-                       after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      {/* Mobile Dropdown with fade+slide */}
+      <div
+        className={`md:hidden bg-gray-700 transition-all duration-500 overflow-hidden
+          ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}
+        `}
+      >
+        <ul className="flex flex-col items-center gap-4 py-4">
+          {navLinks.map((link) => (
+            <li key={link.to}>
+              <Link
+                to={link.to}
+                smooth="easeInOutQuad"
+                duration={800}
+                spy={true}
+                offset={-70}
+                activeClass="active-link"
+                onClick={() => setIsOpen(false)}
+                className="relative cursor-pointer hover:text-blue-600 transition-colors inline-block
+                     after:content-[''] after:block after:h-[2px] after:bg-blue-600 after:scale-x-0
+                     after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100"
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 }
