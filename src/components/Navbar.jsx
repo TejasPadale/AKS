@@ -46,7 +46,7 @@ export default function Navbar() {
           }
         >
           <img src={Logo} alt="Logo" className="h-8 w-8" />
-          <span className="text-xl font-bold">ABHAY KISHOR SALUNKHE</span>
+          <span className="text-xl font-bold">AKS Construction</span>
         </div>
 
         {/* Desktop Links */}

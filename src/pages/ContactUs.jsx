@@ -28,8 +28,11 @@ export default function ContactUs() {
         {/* Name & Title card */}
         <div className="bg-gray-950/90 rounded-xl p-8 shadow-xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-2 text-orange-500">
-            Abhay Kishor Salunkhe
+            AKS Construction
           </h2>
+          <p className="text-2xl md:text-2xl font-bold mb-2 text-teal-500">
+            Abhay Kishor Salunkhe
+          </p>
           <p className="text-lg md:text-xl text-gray-300 font-medium">
             Reg. Engineers and Contractor
           </p>
